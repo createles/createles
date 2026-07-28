@@ -2,10 +2,11 @@
 
 <div align="center">
 
-[![English](https://img.shields.io/badge/Language-English-blue.svg)](./README.md) 
-[![Japanese](https://img.shields.io/badge/Language-日本語-red.svg)](#)
+[![English](https://img.shields.io/badge/README-English-blue.svg)](./README.md) 
+[![Japanese](https://img.shields.io/badge/README-日本語-red.svg)](#)
 
 ### フルスタックソフトウェアエンジニア | Node.js • Express • PostgreSQL • MongoDB • JavaScript / React
+![English](https://img.shields.io/badge/ENG-green) ![Japanese](https://img.shields.io/badge/JP-red) ![Filipino](https://img.shields.io/badge/FIL-blue)
 
 > *パズルソルバーの思考プロセスで、感覚を刺激するWeb体験、インタラクティブツール、没入型ユーザーインターフェースを構築。*
 
@@ -73,10 +74,11 @@
 
 ---
 
-## 🌐 語学 ＆ コミュニケーション能力
+## 🌐 トライリンガル能力 (Trilingual Capabilities)
 
 * **JLPT N2 認定**: 日本語の技術ドキュメントの解読、社内システムの理解、業務成果物・納品物の翻訳に十分対応可能。
-* **クロスカルチャー・テクニカルコミュニケーション**: 英語と日本語のバイリンガルチームにおいて、要件定義、仕様書のハンドオフ、ドキュメントレビューの円滑な進行を推進。
+* **英語・フィリピン語（ネイティブレベル）**: 英語およびフィリピン語の業務環境においてプロフェッショナルレベルのネイティブな流暢さを保有。
+* **クロスカルチャー・テクニカルコミュニケーション**: 多言語チーム（英語・日本語・フィリピン語）において、要件定義、仕様書のハンドオフ、ドキュメントレビューの円滑な進行を推進。
 
 ---
 

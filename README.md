@@ -2,10 +2,13 @@
 
 <div align="center">
 
-[![English](https://img.shields.io/badge/Language-English-blue.svg)](#) 
-[![Japanese](https://img.shields.io/badge/Language-日本語-red.svg)](./README.ja.md)
+[![English](https://img.shields.io/badge/README-English-blue.svg)](#) 
+[![Japanese](https://img.shields.io/badge/README-日本語-red.svg)](./README.ja.md)
 
 ### Full-Stack Software Engineer | Node.js • Express • PostgreSQL • MongoDB • JavaScript / React
+![English](https://img.shields.io/badge/ENG-green) ![Japanese](https://img.shields.io/badge/JP-red) ![Filipino](https://img.shields.io/badge/FIL-blue)
+
+
 
 > *Building sense-provoking web experiences, interactive tools, and user immersive displays with a puzzle-solver's mindset.*
 
@@ -73,9 +76,10 @@ Having spent years designing interactive learning tools & realia and facilitatin
 
 ---
 
-## 🌐 Bilingual Capabilities
+## 🌐 Trilingual Capabilities
 
 * **JLPT N2 Certified**: Capable in reading Japanese technical documentation, navigating local systems, and translating deliverables.
+* **Native English & Filipino**: Full professional fluency in English and Filipino work environments. 
 * **Cross-Cultural Technical Communication**: Experienced in facilitating requirement gathering, specification handoffs, and documentation reviews between English and Japanese teams.
 
 ---
