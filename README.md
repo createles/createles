@@ -55,12 +55,12 @@ Having spent years designing interactive learning tools & realia and facilitatin
 > * **Engineering Highlight**: Architected an automated backend image processing pipeline (`Multer` + `Sharp`) that intercepts and compresses user uploads in server memory, cutting storage footprints by **70%+** without client-side lag.
 > * [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md) | 🚀 [Live App](https://sennan-jets.up.railway.app/)
 
-### 3. [Gooble Drive](https://github.com/createles/gooble-drive) 🗃️
+### 3. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
 > **Cloud Storage & File Management Platform**
 >
 > * **Tech Stack**: Node.js, Express, JavaScript, Database Storage
 > * **Engineering Highlight**: Designed a full-stack file management system supporting multipart file uploads, folder hierarchy management, and dynamic database querying.
-> * [English Documentation](https://github.com/createles/gooble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gooble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gooble-drive-production.up.railway.app/)
+> * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
 
 ---
 

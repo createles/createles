@@ -53,12 +53,12 @@
 > * **エンジニアリングハイライト**: サーバーメモリ内でユーザーアップロード画像をインターセプトして圧縮する自動バックエンド画像処理パイプライン（`Multer` + `Sharp`）を設計。クライアント側のレンダリング遅延を発生させずにストレージ容量を**70%以上**削減。
 > * [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md) | 🚀 [Live App](https://sennan-jets.up.railway.app/)
 
-### 3. [Gooble Drive](https://github.com/createles/gooble-drive) 🗃️
+### 3. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
 > **クラウドストレージ ＆ ファイル管理プラットフォーム**
 >
 > * **技術スタック**: Node.js, Express, JavaScript, Database Storage
 > * **エンジニアリングハイライト**: マルチパートファイルアップロード、フォルダ階層管理、動的データベースクエリをサポートするフルスタックファイル管理システムを設計。
-> * [English Documentation](https://github.com/createles/gooble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gooble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gooble-drive-production.up.railway.app/)
+> * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
 
 ---
 
