@@ -28,11 +28,11 @@
 
 | カテゴリ | スキルセット |
 | :--- | :--- |
-| **開発言語** | JavaScript (ES6+), HTML5, CSS3, SQL, Python |
-| **バックエンド & API** | Node.js, Express.js, RESTful APIs, Middleware Architecture, Auth / Sessions |
+| **開発言語** | JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL, Python |
+| **バックエンド & API** | Node.js, Express.js, Next.js, RESTful APIs, Middleware Architecture, Auth / Sessions |
 | **データベース & ストレージ** | PostgreSQL, MongoDB, Prisma ORM, Supabase, Firebase Storage |
 | **フロントエンド & テンプレート** | React, EJS, レスポンシブWebデザイン, 動的DOM操作 |
-| **DevOps & 開発ツール** | Git, GitHub, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **DevOps & 開発ツール** | Git, GitHub, Docker, Railway, Vercel, Netlify, Postman, Multer, Sharp |
 | **探求中・研究中の技術** | Python (IoT / Raspberry Pi 自動化・ホームサーバー), Godot Engine (ゲームロジック & システムデザイン) |
 
 ---
@@ -59,6 +59,13 @@
 > * **技術スタック**: Node.js, Express, JavaScript, Database Storage
 > * **エンジニアリングハイライト**: マルチパートファイルアップロード、フォルダ階層管理、動的データベースクエリをサポートするフルスタックファイル管理システムを設計。
 > * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
+
+### 4. [Memoreat](https://github.com/createles/memoreat) 🍽️
+> **食事記録ダイアリー**
+>
+> * **技術スタック**: Next.js, TypeScript, React, PostgreSQL, Prisma ORM, Docker, Github Actions, Framer-Motion
+> * **エンジニアリングハイライト**: フルスタックのNext.jsアプリとデータベースをDocker Composeでパッケージ化し、Github Actions経由でGithub Container Registryにデプロイ。
+> * [English Documentation](https://github.com/createles/memoreat/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/memoreat/blob/main/README.ja.md) | 🚀 [Live App](https://memoreat-production.up.railway.app/)
 
 ---
 

@@ -30,11 +30,11 @@ Having spent years designing interactive learning tools & realia and facilitatin
 
 | Category | Skill Set |
 | :--- | :--- |
-| **Languages** | JavaScript (ES6+), HTML5, CSS3, SQL, Python |
-| **Backend & APIs** | Node.js, Express.js, RESTful APIs, Middleware Architecture, Auth / Sessions |
+| **Languages** | JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL, Python |
+| **Backend & APIs** | Node.js, Express.js, Next.js, RESTful APIs, Middleware Architecture, Auth / Sessions |
 | **Database & Storage** | PostgreSQL, MongoDB, Prisma ORM, Supabase, Firebase Storage |
 | **Frontend & Templating** | React, EJS, Responsive Web Design, Dynamic DOM Interaction |
-| **DevOps & Tools** | Git, GitHub, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **DevOps & Tools** | Git, GitHub, Docker, Railway, Vercel, Netlify, Postman, Multer, Sharp |
 | **Active Explorations** | Python (IoT / Raspberry Pi Automation and Home Servers), Godot Engine (Game Logic & Systems Design) |
 
 ---
@@ -62,6 +62,13 @@ Having spent years designing interactive learning tools & realia and facilitatin
 > * **Engineering Highlight**: Designed a full-stack file management system supporting multipart file uploads, folder hierarchy management, and dynamic database querying.
 > * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
 
+
+### 4. [Memoreat](https://github.com/createles/memoreat) 🍽️
+> **Food Logging Diary**
+>
+> * **Tech Stack**: Next.js, TypeScript, React, PostgreSQL, Prisma ORM, Docker, Github Actions, Framer-Motion
+> * **Engineering Highlight**: Packaged a full-stack Next.js App + Database with Docker Compose, served to Github Container Registry via Github Actions.
+> * [English Documentation](https://github.com/createles/memoreat/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/memoreat/blob/main/README.ja.md) | 🚀 [Live App](https://memoreat-production.up.railway.app/)
 ---
 
 ## 💼 Professional Background
