@@ -28,39 +28,46 @@
 
 | カテゴリ | スキルセット |
 | :--- | :--- |
-| **開発言語** | JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL, Python |
-| **バックエンド & API** | Node.js, Express.js, Next.js, RESTful APIs, Middleware Architecture, Auth / Sessions |
-| **データベース & ストレージ** | PostgreSQL, MongoDB, Prisma ORM, Supabase, Firebase Storage |
+| **開発言語** | JavaScript (ES6+), TypeScript, Python, HTML5, CSS3, SQL |
+| **バックエンド & API** | Node.js, Express.js, Next.js, 非同期デーモン (Python / asyncio), RESTful APIs, Middleware Architecture, Auth / Sessions |
+| **データベース & ストレージ** | PostgreSQL, SQLite (WAL / Single-Writer), MongoDB, Prisma ORM, Supabase, Firebase Storage |
 | **フロントエンド & テンプレート** | React, EJS, レスポンシブWebデザイン, 動的DOM操作 |
-| **DevOps & 開発ツール** | Git, GitHub, Docker, Railway, Vercel, Netlify, Postman, Multer, Sharp |
-| **探求中・研究中の技術** | Python (IoT / Raspberry Pi 自動化・ホームサーバー), Godot Engine (ゲームロジック & システムデザイン) |
+| **DevOps & 開発ツール** | Git, GitHub, Docker, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **探求中・研究中の技術** | IoT / Raspberry Pi 自動化・ホームサーバー, Godot Engine (ゲームロジック & システムデザイン) |
 
 ---
 
 ## ⭐️ 注目のプロジェクト
 
-### 1. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
+### 1. [JP PC Parts Price & Stock Watcher](https://github.com/createles/price-watcher) ⚡
+> **非同期型EC在庫・価格監視デーモン**
+>
+> * **技術スタック**: Python 3.12+, Playwright Async, Pydantic v2, SQLite (WAL / Single-Writer), Discord Webhooks, Pytest, uv
+> * **エンジニアリングハイライト**: Strategyパターンによる国内主要PCパーツ量販店（ツクモ・ドスパラ・PCワンズ）の非同期DOMスクレイピング、`asyncio.Queue`を活用したシングルライター構成によるSQLiteロック競合の完全排除、状態遷移を捉える純粋関数型差分検知エンジンおよびDiscord Webhook通知パイプラインを設計。160件の密閉テスト（Hermetic Test）を0.6秒未満で高速実行。
+> * [English Documentation](https://github.com/createles/price-watcher/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/price-watcher/blob/main/README.ja.md)
+
+### 2. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
 > **インタラクティブBot対策ミドルウェア**
 >
 > * **技術スタック**: JavaScript, Express, React, HTML5/CSS3, MongoDB, Prisma ORM, Supabase, Railway
 > * **エンジニアリングハイライト**: 動的な3x3画像グリッドシステムを活用したカスタムセキュリティミドルウェアを構築。従来の静的CAPTCHAを即時かつステートフルな視覚的フィードバックに置き換え、セキュリティ強度を維持しながらユーザー体験を最適化。
 > * [English Documentation](https://github.com/createles/pass-n-go/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/pass-n-go/blob/main/README.ja.md) | 🚀 [Live App](https://pass-n-go-captcha.up.railway.app/)
 
-### 2. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
+### 3. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
 > **フルスタックコミュニティハブ ＆ マーケットプレイス**
 > * **アクティブコミュニティWebポータル**: 外国人JETコミュニティ向けの一站式Webリソース＆ガイドブック。フル機能のオンラインマーケットプレイスを統合。
 > * **技術スタック**: Node.js, Express, EJS, PostgreSQL, Prisma ORM, Supabase, Railway
 > * **エンジニアリングハイライト**: サーバーメモリ内でユーザーアップロード画像をインターセプトして圧縮する自動バックエンド画像処理パイプライン（`Multer` + `Sharp`）を設計。クライアント側のレンダリング遅延を発生させずにストレージ容量を**70%以上**削減。
 > * [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md) | 🚀 [Live App](https://sennan-jets.up.railway.app/)
 
-### 3. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
+### 4. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
 > **クラウドストレージ ＆ ファイル管理プラットフォーム**
 >
 > * **技術スタック**: Node.js, Express, JavaScript, Database Storage
 > * **エンジニアリングハイライト**: マルチパートファイルアップロード、フォルダ階層管理、動的データベースクエリをサポートするフルスタックファイル管理システムを設計。
 > * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
 
-### 4. [Memoreat](https://github.com/createles/memoreat) 🍽️
+### 5. [Memoreat](https://github.com/createles/memoreat) 🍽️
 > **食事記録ダイアリー**
 >
 > * **技術スタック**: Next.js, TypeScript, React, PostgreSQL, Prisma ORM, Docker, Github Actions, Framer-Motion

@@ -30,40 +30,46 @@ Having spent years designing interactive learning tools & realia and facilitatin
 
 | Category | Skill Set |
 | :--- | :--- |
-| **Languages** | JavaScript (ES6+), TypeScript, HTML5, CSS3, SQL, Python |
-| **Backend & APIs** | Node.js, Express.js, Next.js, RESTful APIs, Middleware Architecture, Auth / Sessions |
-| **Database & Storage** | PostgreSQL, MongoDB, Prisma ORM, Supabase, Firebase Storage |
+| **Languages** | JavaScript (ES6+), TypeScript, Python, HTML5, CSS3, SQL |
+| **Backend & APIs** | Node.js, Express.js, Next.js, Asynchronous Daemons (Python / asyncio), RESTful APIs, Middleware Architecture, Auth / Sessions |
+| **Database & Storage** | PostgreSQL, SQLite (WAL / Single-Writer), MongoDB, Prisma ORM, Supabase, Firebase Storage |
 | **Frontend & Templating** | React, EJS, Responsive Web Design, Dynamic DOM Interaction |
-| **DevOps & Tools** | Git, GitHub, Docker, Railway, Vercel, Netlify, Postman, Multer, Sharp |
-| **Active Explorations** | Python (IoT / Raspberry Pi Automation and Home Servers), Godot Engine (Game Logic & Systems Design) |
+| **DevOps & Tools** | Git, GitHub, Docker, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **Active Explorations** | IoT / Raspberry Pi Automation & Home Servers, Godot Engine (Game Logic & Systems Design) |
 
 ---
 
 ## ⭐️ Featured Projects
 
-### 1. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
+### 1. [JP PC Parts Price & Stock Watcher](https://github.com/createles/price-watcher) ⚡
+> **Asynchronous E-Commerce Scraping & Event Daemon**
+>
+> * **Tech Stack**: Python 3.12+, Playwright Async, Pydantic v2, SQLite (WAL / Single-Writer), Discord Webhooks, Pytest, uv
+> * **Engineering Highlight**: Architected an asynchronous event-driven daemon featuring decoupled strategy extractors for Japanese retailers (Tsukumo, Dospara, PC One's), an `asyncio.Queue` single-writer actor pattern preventing SQLite write locks, pure functional delta state evaluations, and rich Discord embeds. Validated with 160 hermetic tests running in <0.6s.
+> * [English Documentation](https://github.com/createles/price-watcher/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/price-watcher/blob/main/README.ja.md)
+
+### 2. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
 > **Interactive Anti-Bot Security Middleware**
 >
 > * **Tech Stack**: JavaScript, Express, React, HTML5/CSS3, MongoDB, Prisma ORM, Supabase, Railway
 > * **Engineering Highlight**: Built custom security middleware utilizing a dynamic 3x3 image grid system. Replaced static captcha checks with instant, stateful visual feedback to optimize user interaction while maintaining security integrity.
 > * [English Documentation](https://github.com/createles/pass-n-go/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/pass-n-go/blob/main/README.ja.md) | 🚀 [Live App](https://pass-n-go-captcha.up.railway.app/)
 
-### 2. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
+### 3. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
 > **Full-Stack Community Hub & Marketplace**
 > * **Active Community Web Portal**: Crafted a one-stop web resource and guide book for the Foreign JET Community with a fully featured online Marketplace
 > * **Tech Stack**: Node.js, Express, EJS, PostgreSQL, Prisma ORM, Supabase, Railway
 > * **Engineering Highlight**: Architected an automated backend image processing pipeline (`Multer` + `Sharp`) that intercepts and compresses user uploads in server memory, cutting storage footprints by **70%+** without client-side lag.
 > * [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md) | 🚀 [Live App](https://sennan-jets.up.railway.app/)
 
-### 3. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
+### 4. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
 > **Cloud Storage & File Management Platform**
 >
 > * **Tech Stack**: Node.js, Express, JavaScript, Database Storage
 > * **Engineering Highlight**: Designed a full-stack file management system supporting multipart file uploads, folder hierarchy management, and dynamic database querying.
 > * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
 
-
-### 4. [Memoreat](https://github.com/createles/memoreat) 🍽️
+### 5. [Memoreat](https://github.com/createles/memoreat) 🍽️
 > **Food Logging Diary**
 >
 > * **Tech Stack**: Next.js, TypeScript, React, PostgreSQL, Prisma ORM, Docker, Github Actions, Framer-Motion
