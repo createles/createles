@@ -35,6 +35,7 @@ Having spent years designing interactive learning tools & realia and facilitatin
 | **Database & Storage** | PostgreSQL, SQLite (WAL / Single-Writer), MongoDB, Prisma ORM, Supabase, Firebase Storage |
 | **Frontend & Templating** | React, EJS, Responsive Web Design, Dynamic DOM Interaction |
 | **DevOps & Tools** | Git, GitHub, Docker, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **AI Tooling & Workflows** | Claude Code, Gemini / Antigravity CLI, Cursor, GitHub Copilot |
 | **Active Explorations** | IoT / Raspberry Pi Automation & Home Servers, Godot Engine (Game Logic & Systems Design) |
 
 ---

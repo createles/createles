@@ -33,6 +33,7 @@
 | **データベース & ストレージ** | PostgreSQL, SQLite (WAL / Single-Writer), MongoDB, Prisma ORM, Supabase, Firebase Storage |
 | **フロントエンド & テンプレート** | React, EJS, レスポンシブWebデザイン, 動的DOM操作 |
 | **DevOps & 開発ツール** | Git, GitHub, Docker, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **AIツール & ワークフロー** | Claude Code, Gemini / Antigravity CLI, Cursor, GitHub Copilot |
 | **探求中・研究中の技術** | IoT / Raspberry Pi 自動化・ホームサーバー, Godot Engine (ゲームロジック & システムデザイン) |
 
 ---
