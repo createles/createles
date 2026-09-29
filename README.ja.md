@@ -29,51 +29,89 @@
 | カテゴリ | スキルセット |
 | :--- | :--- |
 | **開発言語** | JavaScript (ES6+), TypeScript, Python, HTML5, CSS3, SQL |
-| **バックエンド & API** | Node.js, Express.js, Next.js, 非同期デーモン (Python / asyncio), RESTful APIs, Middleware Architecture, Auth / Sessions |
+| **バックエンド & API** | Node.js, Express.js, NestJS, Next.js, WebSockets (Socket.io), 非同期デーモン (Python / asyncio), RESTful APIs, Middleware Architecture, Auth / Sessions |
 | **データベース & ストレージ** | PostgreSQL, SQLite (WAL / Single-Writer), MongoDB, Prisma ORM, Supabase, Firebase Storage |
-| **フロントエンド & テンプレート** | React, EJS, レスポンシブWebデザイン, 動的DOM操作 |
-| **DevOps & 開発ツール** | Git, GitHub, Docker, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **フロントエンド & テンプレート** | React, Tailwind CSS, EJS, レスポンシブWebデザイン, 動的DOM操作 |
+| **DevOps & 開発ツール** | Git, GitHub, Docker, pnpm Workspaces, Nginx, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
 | **AIツール & ワークフロー** | Claude Code, Gemini / Antigravity CLI, Cursor, GitHub Copilot |
 | **探求中・研究中の技術** | IoT / Raspberry Pi 自動化・ホームサーバー, Godot Engine (ゲームロジック & システムデザイン) |
 
 ---
 
-## ⭐️ 注目のプロジェクト
+## ⭐️ 注目のプロジェクト (Featured Spotlights)
 
-### 1. [JP PC Parts Price & Stock Watcher](https://github.com/createles/price-watcher) ⚡
+### 1. [CapsLoc — Game Localization & LQA Triage Hub](https://github.com/createles/capsloc) 🎮
+> **リアルタイム・ゲームローカライゼーション & LQA トリアージハブ（フルスタック・モノレポ）**
+
+<div align="center">
+  <a href="https://capsloc.up.railway.app/">
+    <img src="https://github.com/createles/capsloc/releases/download/v1.0.0-assets/hero_cockpit.gif" alt="CapsLoc コックピット概要" width="680" />
+  </a>
+  <p align="center">
+    <sub>🎮 16:9 コックピットプレビュー — リアルタイム・トリアージチャット、LocStringインスペクター、文字数制限ハザードゲージ。</sub>
+  </p>
+</div>
+
+* **技術スタック**: `TypeScript (~6.0)` • `NestJS v12` • `React 19` • `Socket.io` • `PostgreSQL 16` • `Prisma 7` • `Tailwind CSS v4` • `Docker` • `pnpm Workspaces`
+* **アーキテクチャ ＆ エンジニアリングハイライト**:
+  * **統合モノレポ**: バックエンドとフロントエンド間で型安全な共有DTOおよびコントラクトを共有する厳格なpnpmワークスペース。
+  * **リアルタイム全二重通信**: Socket.ioによる低遅延トリアージチャット、在席状況（Presence）、タイピングインジケーター。
+  * **ゲーム文字列リレーショナル連携**: 正規表現（`#LOC-*`, `$STR_*`）を用いたゲーム内台詞・UI文字列の自動検知とPostgreSQLリレーション連携。
+  * **インスペクター＆ハザードゲージ**: 翻訳後のUI文字あふれを防止する動的文字数制限ゲージ、ミリ秒単位の公式用語集（DNTフラグ対応）、および厳格なRBAC承認フロー（`LOC_PM`, `SOLUTIONS_DEV`）。
+  * **リフローゼロのバイリンガルエンジン**: 228キーの完全型定義辞書により、画面リフローなしで即時日英切り替え。
+* 🚀 **[ライブデモを体験](https://capsloc.up.railway.app/)** • 📦 **[GitHub リポジトリ](https://github.com/createles/capsloc)** • 🏛️ **[アーキテクチャ詳細](https://github.com/createles/capsloc/blob/main/docs/architecture.md)** • [English Documentation](https://github.com/createles/capsloc/blob/main/README.md)
+
+---
+
+### 2. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
+> **実運用コミュニティポータル ＆ 認証付きオンラインマーケットプレイス**
+
+| 🏛️ 行政情報ポータル ＆ ガイド | 🛒 コミュニティマーケットプレイス（動的売買） |
+| :---: | :---: |
+| <a href="https://sennan-jets.up.railway.app/"><img src="https://raw.githubusercontent.com/createles/sennan-jet-resources/main/assets/herobanner-section.png" alt="Sennan City JETs Portal Banner" width="100%" /></a> | <a href="https://sennan-jets.up.railway.app/"><img src="https://raw.githubusercontent.com/createles/sennan-jet-resources/main/assets/marketplace-section.gif" alt="Community Marketplace Live Demo" width="100%" /></a> |
+
+<p align="center">
+  <sub>左: 行政情報・地域ガイドブック • 右: インメモリ画像圧縮パイプライン（Sharp）を統合した認証付きマーケットプレイス。</sub>
+</p>
+
+* **技術スタック**: `Node.js` • `Express` • `EJS` • `PostgreSQL` • `Prisma ORM` • `Supabase Storage` • `Railway` • `Multer` • `Sharp`
+* **アーキテクチャ ＆ エンジニアリングハイライト**:
+  * **本番運用実績**: 泉南市の公務員・外国語指導員向けに実運用されている一站式情報ガイドブックおよび認証付きマーケットプレイス。
+  * **インメモリ画像最適化**: サーバーメモリ内でアップロード画像を即座にインターセプト・圧縮する `Multer` + `Sharp` パイプラインにより、クライアント遅延ゼロでストレージフットプリントを**70%以上**削減。
+  * **リレーショナルスキーマ管理**: Prisma ORMによるユーザー認証、物品予約ライフサイクル、公開掲示板のデータ整合性管理。
+* 🚀 **[アプリを体験](https://sennan-jets.up.railway.app/)** • 📦 **[GitHub リポジトリ](https://github.com/createles/sennan-jet-resources)** • [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md)
+
+---
+
+### 🔧 その他の主要システム・実装プロジェクト (Targeted Systems)
+
+### 3. [JP PC Parts Price & Stock Watcher](https://github.com/createles/price-watcher) ⚡
 > **非同期型EC在庫・価格監視デーモン**
 >
-> * **技術スタック**: Python 3.12+, Playwright Async, Pydantic v2, SQLite (WAL / Single-Writer), Discord Webhooks, Pytest, uv
+> * **技術スタック**: `Python 3.12+` • `Playwright Async` • `Pydantic v2` • `SQLite (WAL)` • `Discord Webhooks` • `Pytest` • `uv`
 > * **エンジニアリングハイライト**: Strategyパターンによる国内主要PCパーツ量販店（ツクモ・ドスパラ・PCワンズ）の非同期DOMスクレイピング、`asyncio.Queue`を活用したシングルライター構成によるSQLiteロック競合の完全排除、状態遷移を捉える純粋関数型差分検知エンジンおよびDiscord Webhook通知パイプラインを設計。160件の密閉テスト（Hermetic Test）を0.6秒未満で高速実行。
-> * [English Documentation](https://github.com/createles/price-watcher/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/price-watcher/blob/main/README.ja.md)
+> * 📦 [GitHub リポジトリ](https://github.com/createles/price-watcher) • [English Documentation](https://github.com/createles/price-watcher/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/price-watcher/blob/main/README.ja.md)
 
-### 2. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
-> **インタラクティブBot対策ミドルウェア**
+### 4. [Memoreat](https://github.com/createles/memoreat) 🍽️
+> **コンテナ化された食事記録アプリ ＆ 自動CI/CDパイプライン**
 >
-> * **技術スタック**: JavaScript, Express, React, HTML5/CSS3, MongoDB, Prisma ORM, Supabase, Railway
+> * **技術スタック**: `Next.js` • `TypeScript` • `React` • `PostgreSQL` • `Prisma ORM` • `Docker` • `GitHub Actions` • `Framer Motion`
+> * **エンジニアリングハイライト**: フルスタックのNext.jsアプリとPostgreSQLデータベースをDocker Composeでコンテナ化。GitHub Actionsを用いた自動CI/CDパイプラインを構築し、GitHub Container Registry (GHCR) へ本番イメージを自動ビルド・公開。
+> * 🚀 [ライブアプリ](https://memoreat-production.up.railway.app/) • 📦 [GitHub リポジトリ](https://github.com/createles/memoreat) • [English Documentation](https://github.com/createles/memoreat/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/memoreat/blob/main/README.ja.md)
+
+### 5. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
+> **インタラクティブBot対策ビジュアル検証ミドルウェア**
+>
+> * **技術スタック**: `JavaScript (ES6+)` • `Express` • `React` • `HTML5/CSS3` • `MongoDB` • `Prisma ORM` • `Supabase` • `Railway`
 > * **エンジニアリングハイライト**: 動的な3x3画像グリッドシステムを活用したカスタムセキュリティミドルウェアを構築。従来の静的CAPTCHAを即時かつステートフルな視覚的フィードバックに置き換え、セキュリティ強度を維持しながらユーザー体験を最適化。
-> * [English Documentation](https://github.com/createles/pass-n-go/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/pass-n-go/blob/main/README.ja.md) | 🚀 [Live App](https://pass-n-go-captcha.up.railway.app/)
+> * 🚀 [ライブアプリ](https://pass-n-go-captcha.up.railway.app/) • 📦 [GitHub リポジトリ](https://github.com/createles/pass-n-go) • [English Documentation](https://github.com/createles/pass-n-go/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/pass-n-go/blob/main/README.ja.md)
 
-### 3. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
-> **フルスタックコミュニティハブ ＆ マーケットプレイス**
-> * **アクティブコミュニティWebポータル**: 外国人JETコミュニティ向けの一站式Webリソース＆ガイドブック。フル機能のオンラインマーケットプレイスを統合。
-> * **技術スタック**: Node.js, Express, EJS, PostgreSQL, Prisma ORM, Supabase, Railway
-> * **エンジニアリングハイライト**: サーバーメモリ内でユーザーアップロード画像をインターセプトして圧縮する自動バックエンド画像処理パイプライン（`Multer` + `Sharp`）を設計。クライアント側のレンダリング遅延を発生させずにストレージ容量を**70%以上**削減。
-> * [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md) | 🚀 [Live App](https://sennan-jets.up.railway.app/)
-
-### 4. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
+### 6. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
 > **クラウドストレージ ＆ ファイル管理プラットフォーム**
 >
-> * **技術スタック**: Node.js, Express, JavaScript, Database Storage
-> * **エンジニアリングハイライト**: マルチパートファイルアップロード、フォルダ階層管理、動的データベースクエリをサポートするフルスタックファイル管理システムを設計。
-> * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
-
-### 5. [Memoreat](https://github.com/createles/memoreat) 🍽️
-> **食事記録ダイアリー**
->
-> * **技術スタック**: Next.js, TypeScript, React, PostgreSQL, Prisma ORM, Docker, Github Actions, Framer-Motion
-> * **エンジニアリングハイライト**: フルスタックのNext.jsアプリとデータベースをDocker Composeでパッケージ化し、Github Actions経由でGithub Container Registryにデプロイ。
-> * [English Documentation](https://github.com/createles/memoreat/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/memoreat/blob/main/README.ja.md) | 🚀 [Live App](https://memoreat-production.up.railway.app/)
+> * **技術スタック**: `Node.js` • `Express` • `JavaScript (ES6+)` • `Database Storage` • `Railway`
+> * **エンジニアリングハイライト**: マルチパートファイルアップロード、再帰的なフォルダ階層管理、動的データベースクエリをサポートするフルスタックファイル管理システムを設計。
+> * 🚀 [ライブアプリ](https://gobble-drive-production.up.railway.app/) • 📦 [GitHub リポジトリ](https://github.com/createles/gooble-drive) • [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md)
 
 ---
 

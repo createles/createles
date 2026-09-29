@@ -31,51 +31,89 @@ Having spent years designing interactive learning tools & realia and facilitatin
 | Category | Skill Set |
 | :--- | :--- |
 | **Languages** | JavaScript (ES6+), TypeScript, Python, HTML5, CSS3, SQL |
-| **Backend & APIs** | Node.js, Express.js, Next.js, Asynchronous Daemons (Python / asyncio), RESTful APIs, Middleware Architecture, Auth / Sessions |
+| **Backend & APIs** | Node.js, Express.js, NestJS, Next.js, WebSockets (Socket.io), Asynchronous Daemons (Python / asyncio), RESTful APIs, Middleware Architecture, Auth / Sessions |
 | **Database & Storage** | PostgreSQL, SQLite (WAL / Single-Writer), MongoDB, Prisma ORM, Supabase, Firebase Storage |
-| **Frontend & Templating** | React, EJS, Responsive Web Design, Dynamic DOM Interaction |
-| **DevOps & Tools** | Git, GitHub, Docker, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
+| **Frontend & Templating** | React, Tailwind CSS, EJS, Responsive Web Design, Dynamic DOM Interaction |
+| **DevOps & Tools** | Git, GitHub, Docker, pnpm Workspaces, Nginx, Playwright, Pytest, Ruff, uv, Railway, Vercel, Netlify, Postman, Multer, Sharp |
 | **AI Tooling & Workflows** | Claude Code, Gemini / Antigravity CLI, Cursor, GitHub Copilot |
 | **Active Explorations** | IoT / Raspberry Pi Automation & Home Servers, Godot Engine (Game Logic & Systems Design) |
 
 ---
 
-## ⭐️ Featured Projects
+## ⭐️ Featured Spotlights
 
-### 1. [JP PC Parts Price & Stock Watcher](https://github.com/createles/price-watcher) ⚡
+### 1. [CapsLoc — Game Localization & LQA Triage Hub](https://github.com/createles/capsloc) 🎮
+> **Enterprise-Grade Real-Time Game Localization & LQA Triage Monorepo**
+
+<div align="center">
+  <a href="https://capsloc.up.railway.app/">
+    <img src="https://github.com/createles/capsloc/releases/download/v1.0.0-assets/hero_cockpit.gif" alt="CapsLoc Cockpit Overview" width="680" />
+  </a>
+  <p align="center">
+    <sub>🎮 16:9 Cockpit Preview — Real-time localization triage, slide-out string inspector, and character limit hazard gauges.</sub>
+  </p>
+</div>
+
+* **Tech Stack**: `TypeScript (~6.0)` • `NestJS v12` • `React 19` • `Socket.io` • `PostgreSQL 16` • `Prisma 7` • `Tailwind CSS v4` • `Docker` • `pnpm Workspaces`
+* **Architecture & Highlights**:
+  * **Unified Monorepo**: Strict pnpm workspace sharing compile-time TypeScript DTOs and contracts between NestJS backend and React frontend.
+  * **Real-Time Duplex Gateway**: Low-latency Socket.io triage messaging, presence tracking, and active typing indicators.
+  * **Relational LocString Parsing**: Automated regex detection (`#LOC-*`, `$STR_*`) linking dialog and UI strings directly to PostgreSQL.
+  * **Inspector Drawer & Hazard Gauges**: Dynamic character limit gauges preventing localized UI text clipping, sub-millisecond canonical glossary termbase, and strict RBAC approvals (`LOC_PM`, `SOLUTIONS_DEV`).
+  * **Zero-Reflow Bilingual Engine**: Instant EN/JA toggle with 100% compile-time dictionary parity across 228 strictly-typed keys.
+* 🚀 **[Explore Live Demo](https://capsloc.up.railway.app/)** • 📦 **[GitHub Repository](https://github.com/createles/capsloc)** • 🏛️ **[System Architecture](https://github.com/createles/capsloc/blob/main/docs/architecture.md)** • [日本語ドキュメント](https://github.com/createles/capsloc/blob/main/README.ja.md)
+
+---
+
+### 2. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
+> **Production Community Portal & Authenticated Marketplace**
+
+| 🏛️ Portal Hub & Guidebook | 🛒 Community Marketplace (Live Triage) |
+| :---: | :---: |
+| <a href="https://sennan-jets.up.railway.app/"><img src="https://raw.githubusercontent.com/createles/sennan-jet-resources/main/assets/herobanner-section.png" alt="Sennan City JETs Portal Banner" width="100%" /></a> | <a href="https://sennan-jets.up.railway.app/"><img src="https://raw.githubusercontent.com/createles/sennan-jet-resources/main/assets/marketplace-section.gif" alt="Community Marketplace Live Demo" width="100%" /></a> |
+
+<p align="center">
+  <sub>📢 Left: Municipal information portal & guidebook • Right: Authenticated marketplace with on-the-fly Sharp image compression.</sub>
+</p>
+
+* **Tech Stack**: `Node.js` • `Express` • `EJS` • `PostgreSQL` • `Prisma ORM` • `Supabase Storage` • `Railway` • `Multer` • `Sharp`
+* **Architecture & Highlights**:
+  * **Production Deployment**: Active one-stop portal and verified marketplace serving municipal civil servants and foreign educators in Sennan City.
+  * **In-Memory Image Optimization**: Automated `Multer` + `Sharp` compression pipeline processing uploads directly in server memory, slashing storage footprints by **70%+** without client-side lag.
+  * **Relational Schema Integrity**: Prisma ORM managing user auth, item reservation lifecycles, and public community noticeboards.
+* 🚀 **[Explore Live App](https://sennan-jets.up.railway.app/)** • 📦 **[GitHub Repository](https://github.com/createles/sennan-jet-resources)** • [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md)
+
+---
+
+### 🔧 Systems & Targeted Implementations
+
+### 3. [JP PC Parts Price & Stock Watcher](https://github.com/createles/price-watcher) ⚡
 > **Asynchronous E-Commerce Scraping & Event Daemon**
 >
-> * **Tech Stack**: Python 3.12+, Playwright Async, Pydantic v2, SQLite (WAL / Single-Writer), Discord Webhooks, Pytest, uv
-> * **Engineering Highlight**: Architected an asynchronous event-driven daemon featuring decoupled strategy extractors for Japanese retailers (Tsukumo, Dospara, PC One's), an `asyncio.Queue` single-writer actor pattern preventing SQLite write locks, pure functional delta state evaluations, and rich Discord embeds. Validated with 160 hermetic tests running in <0.6s.
-> * [English Documentation](https://github.com/createles/price-watcher/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/price-watcher/blob/main/README.ja.md)
+> * **Tech Stack**: `Python 3.12+` • `Playwright Async` • `Pydantic v2` • `SQLite (WAL)` • `Discord Webhooks` • `Pytest` • `uv`
+> * **Engineering Highlight**: Architected an asynchronous event-driven daemon featuring decoupled strategy extractors for Japanese retail DOMs (Tsukumo, Dospara, PC One's) and an `asyncio.Queue` single-writer actor pattern preventing SQLite write locks. Validated with 160 hermetic tests running in <0.6s.
+> * 📦 [GitHub Repository](https://github.com/createles/price-watcher) • [English Documentation](https://github.com/createles/price-watcher/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/price-watcher/blob/main/README.ja.md)
 
-### 2. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
-> **Interactive Anti-Bot Security Middleware**
+### 4. [Memoreat](https://github.com/createles/memoreat) 🍽️
+> **Containerized Food Diary & Automated CI/CD Pipeline**
 >
-> * **Tech Stack**: JavaScript, Express, React, HTML5/CSS3, MongoDB, Prisma ORM, Supabase, Railway
+> * **Tech Stack**: `Next.js` • `TypeScript` • `React` • `PostgreSQL` • `Prisma ORM` • `Docker` • `GitHub Actions` • `Framer Motion`
+> * **Engineering Highlight**: Packaged a full-stack Next.js application and relational database with Docker Compose, automated through GitHub Actions CI/CD to build and publish production images to GitHub Container Registry (GHCR).
+> * 🚀 [Live App](https://memoreat-production.up.railway.app/) • 📦 [GitHub Repository](https://github.com/createles/memoreat) • [English Documentation](https://github.com/createles/memoreat/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/memoreat/blob/main/README.ja.md)
+
+### 5. [Pass-n-Go Captcha Middleware](https://github.com/createles/pass-n-go) 🔐
+> **Interactive Anti-Bot Visual Verification Middleware**
+>
+> * **Tech Stack**: `JavaScript (ES6+)` • `Express` • `React` • `HTML5/CSS3` • `MongoDB` • `Prisma ORM` • `Supabase` • `Railway`
 > * **Engineering Highlight**: Built custom security middleware utilizing a dynamic 3x3 image grid system. Replaced static captcha checks with instant, stateful visual feedback to optimize user interaction while maintaining security integrity.
-> * [English Documentation](https://github.com/createles/pass-n-go/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/pass-n-go/blob/main/README.ja.md) | 🚀 [Live App](https://pass-n-go-captcha.up.railway.app/)
+> * 🚀 [Live App](https://pass-n-go-captcha.up.railway.app/) • 📦 [GitHub Repository](https://github.com/createles/pass-n-go) • [English Documentation](https://github.com/createles/pass-n-go/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/pass-n-go/blob/main/README.ja.md)
 
-### 3. [Sennan City JETs Resource Portal](https://github.com/createles/sennan-jet-resources) 📢
-> **Full-Stack Community Hub & Marketplace**
-> * **Active Community Web Portal**: Crafted a one-stop web resource and guide book for the Foreign JET Community with a fully featured online Marketplace
-> * **Tech Stack**: Node.js, Express, EJS, PostgreSQL, Prisma ORM, Supabase, Railway
-> * **Engineering Highlight**: Architected an automated backend image processing pipeline (`Multer` + `Sharp`) that intercepts and compresses user uploads in server memory, cutting storage footprints by **70%+** without client-side lag.
-> * [English Documentation](https://github.com/createles/sennan-jet-resources/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/sennan-jet-resources/blob/main/README.ja.md) | 🚀 [Live App](https://sennan-jets.up.railway.app/)
-
-### 4. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
+### 6. [Gobble Drive](https://github.com/createles/gooble-drive) 🗃️
 > **Cloud Storage & File Management Platform**
 >
-> * **Tech Stack**: Node.js, Express, JavaScript, Database Storage
-> * **Engineering Highlight**: Designed a full-stack file management system supporting multipart file uploads, folder hierarchy management, and dynamic database querying.
-> * [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md) | 🚀 [Live App](https://gobble-drive-production.up.railway.app/)
-
-### 5. [Memoreat](https://github.com/createles/memoreat) 🍽️
-> **Food Logging Diary**
->
-> * **Tech Stack**: Next.js, TypeScript, React, PostgreSQL, Prisma ORM, Docker, Github Actions, Framer-Motion
-> * **Engineering Highlight**: Packaged a full-stack Next.js App + Database with Docker Compose, served to Github Container Registry via Github Actions.
-> * [English Documentation](https://github.com/createles/memoreat/blob/main/README.md) | [日本語ドキュメント](https://github.com/createles/memoreat/blob/main/README.ja.md) | 🚀 [Live App](https://memoreat-production.up.railway.app/)
+> * **Tech Stack**: `Node.js` • `Express` • `JavaScript (ES6+)` • `Database Storage` • `Railway`
+> * **Engineering Highlight**: Designed a full-stack file management system supporting multipart file uploads, recursive folder hierarchy management, and dynamic database querying.
+> * 🚀 [Live App](https://gobble-drive-production.up.railway.app/) • 📦 [GitHub Repository](https://github.com/createles/gooble-drive) • [English Documentation](https://github.com/createles/gobble-drive/blob/main/README.md) • [日本語ドキュメント](https://github.com/createles/gobble-drive/blob/main/README.ja.md)
 ---
 
 ## 💼 Professional Background
